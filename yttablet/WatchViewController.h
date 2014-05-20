@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WatchTableViewCell.h"
 
-@interface WatchViewController : UIViewController
+@interface WatchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIGestureRecognizerDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *watchTable;
 
 @end

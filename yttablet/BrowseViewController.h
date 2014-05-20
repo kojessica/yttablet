@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BrowseViewController : UIViewController
+@interface BrowseViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
+
+@property (weak, nonatomic) IBOutlet UITableView *browseTable;
+@property (weak, nonatomic) IBOutlet UIView *selectionBox;
+- (IBAction)openMetadata:(UITapGestureRecognizer *)sender;
+- (IBAction)closeBrowseView:(UISwipeGestureRecognizer *)sender;
+- (IBAction)onBackButton:(id)sender;
 
 @end

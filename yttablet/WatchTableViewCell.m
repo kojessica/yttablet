@@ -22,4 +22,13 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)onPinch:(UIPinchGestureRecognizer *)sender {
+    CGFloat scale = sender.scale;
+    /*self.imageView.transform = CGAffineTransformScale(self.imageView.transform, scale, scale);
+    sender.scale = 1.0;*/
+    if (scale > 1) {
+        NSLog(@"Pinched out");
+    }
+}
+
 @end

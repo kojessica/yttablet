@@ -1,0 +1,13 @@
+PODS:
+  - UIImageEffects (0.0.1)
+  - UIView-JTViewToImage (0.1)
+
+DEPENDENCIES:
+  - UIImageEffects
+  - UIView-JTViewToImage (~> 0.1)
+
+SPEC CHECKSUMS:
+  UIImageEffects: e1059bcd4c1766f72a78ae6ade359e3f9ee31063
+  UIView-JTViewToImage: 4bd97ea2f0bdec566343472af301a304cc0218ff
+
+COCOAPODS: 0.32.1

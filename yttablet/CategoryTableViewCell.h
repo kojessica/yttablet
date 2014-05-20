@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface CategoryTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *videoCount;
+@property (weak, nonatomic) IBOutlet UILabel *nameCategory;
+@property (weak, nonatomic) IBOutlet UIImageView *image1;
+@property (weak, nonatomic) IBOutlet UIImageView *image2;
+@property (weak, nonatomic) IBOutlet UIImageView *image3;
 
 @end

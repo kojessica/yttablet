@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MetadataViewController : UIViewController
+@interface MetadataViewController : UIViewController <UIScrollViewDelegate>
+
+- (IBAction)onClose:(id)sender;
+- (IBAction)onSwipe:(UISwipeGestureRecognizer *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *videoTitle;
+@property (strong, nonatomic) NSString *vtitle;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollv;
+@property (weak, nonatomic) IBOutlet UIView *dummyView;
 
 @end

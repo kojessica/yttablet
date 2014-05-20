@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CategoryViewController : UIViewController
+@interface CategoryViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
+@property (weak, nonatomic) IBOutlet UITableView *categoryTable;
 
 @end
